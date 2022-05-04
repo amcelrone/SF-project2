@@ -1,0 +1,11 @@
+<apex:page controller="LeadForceController">
+    <apex:pageBlock title="Leads List">
+        <apex:pageBlockTable value="{! leads}" var="lds">
+        	<apex:column value="{! lds.FirstName }"/>
+            <apex:column value="{! lds.LastName }"/>
+            <apex:column value="{! lds.Rating }"/>
+            <apex:column value="{! lds.Status }"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+</apex:page>
